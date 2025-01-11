@@ -38,13 +38,11 @@ builder.Services.AddSwaggerGen(c => {
 //? Add app settings
 var app = builder.Build();
 
-if (app.Environment.IsDevelopment()) {
-	app.UseSwagger();
-	app.UseSwaggerUI();
-	app.MapGet("/", (HttpContext context) => {
-		context.Response.Redirect("/swagger");
-	});
-}
+app.UseSwagger();
+app.UseSwaggerUI();
+app.MapGet("/", (HttpContext context) => {
+	context.Response.Redirect("/swagger");
+});
 
 app.UseCors("AllowAllOrigins");
 app.UseHttpsRedirection();
