@@ -168,13 +168,13 @@ public class MatrixFactorization {
 	/// <summary>
 	/// Recommends the top N items to the user that have not been rated yet.
 	/// </summary>
-	/// <param name="top">The number of items to return. Defaults to 3.</param>
+	/// <param name="top">The number of items to return. Defaults to 5.</param>
 	/// <returns>A stack of item indices in descending order of predicted scores.</returns>
 	/// <remarks>
 	/// This method trains the model and then ranks all unrated items by their predicted scores.
 	/// The top N items are returned in a stack, where the top item is the most highly recommended.
 	/// </remarks>
-	public Stack<int> Recommend(int top=3) {
+	public Stack<int> Recommend(int top=5) {
 		Train();
 		Ranking<int> rank = new();
 		for (int item = 0; item < Count; item++) {
