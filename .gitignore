@@ -9,6 +9,7 @@ Properties/
 products.csv.gz
 /appsettings.json
 /appsettings.Development.json
+Dockerfile
 
 
 # dotenv files
