@@ -138,13 +138,5 @@ namespace Santa_Gifts_API.Core {
 			
 			return items;
 		}
-
-		/// <summary>
-		/// Returns a string representation of the heap, with all items separated by commas.
-		/// </summary>
-		/// <returns>A string representation of the heap.</returns>
-		public override string ToString() {
-			return $"[{string.Join(", ", Heap)}]";
-		}
 	}
 }

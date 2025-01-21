@@ -290,7 +290,7 @@ public class NaiveBayes {
 
 		foreach (string target in targets) {
 			if (WordStats.TryGetValue(target, out var cat) && cat.Contains(category)) {
-				double weight = Math.Max(soothing, cat.GetStats(category) / rows);
+				double weight = cat.GetStats(category) / rows;
 				double proba = cat.GetProbability(category);
 				
 				weight = Math.Max(weight, soothing);

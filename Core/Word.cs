@@ -104,24 +104,6 @@ namespace Santa_Gifts_API.Core {
 		}
 
 		/// <summary>
-		/// Adds a synonym to the given part of speech type.
-		/// </summary>
-		/// <param name="synonym">The synonym to add.</param>
-		/// <param name="type">The type of the part of speech to add the synonym to.</param>
-		/// <remarks>
-		/// If the given type does not exist, it is added and the synonym is added to it.
-		/// </remarks>
-		public void AddSynonym(string synonym, string type) {
-			if (Details.TryGetValue(type, out var synonyms)) {
-				synonyms.Add(synonym);
-			} 
-			else {
-				AddPartOfSpeech(type);
-				AddSynonym(synonym);
-			}
-		}
-
-		/// <summary>
 		/// Adds a part of speech type with its synonyms and frequency to the word's details.
 		/// Type's frequencies are sorted in descending order.
 		/// The word's value is part of the synonyms.
