@@ -105,6 +105,58 @@ Steps
 
 ---
 
+## Project Folder Structure
+
+```
+Santa Gifts Web API/
+├── AI/
+│   ├── Models/
+│   │   ├── MatrixFactorization.cs
+│   │   ├── NaiveBayes.cs
+│   │   └── Recommender.cs
+│   └── Services/
+│       ├── IRecommenderService.cs
+│       └── RecommenderService.cs
+├── Controllers/
+│   └── RecommenderController.cs
+├── Core/
+│   ├── Categories.cs
+│   ├── Ranking.cs
+│   ├── Sentence.cs
+│   ├── Vocabulary.cs
+│   └── Word.cs
+├── DTOs/
+│   └── Recommendations.cs
+├── Tools/
+│   ├── ApiKeyAuthenticationHandler.cs
+│   ├── Dataset.cs
+│   ├── Lemma.cs
+│   ├── Lexicon.cs
+│   ├── Polarity.cs
+│   └── WordNet.cs
+├── data/
+│   ├── products.csv.gz
+│   └── lexicon/
+│       ├── determiners.txt
+│       ├── lemmas.txt
+│       ├── polarities.txt
+│       ├── pronouns.txt
+│       ├── shifters.txt
+│       ├── stopwords.txt
+│       └── synonyms.txt
+├── Program.cs
+├── README.md
+├── Santa Gifts API.csproj
+├── Santa Gifts API.sln
+├── Santa Gifts API.http
+├── appsettings.json
+├── appsettings.Development.json
+├── Dockerfile
+└── ... (bin/, obj/, Properties/, etc.)
+```
+
+---
+
 ## Configuration
 
 - API key: set the `API_KEY` environment variable to the same value you will send in the request header `MY-API-KEY`.
