@@ -203,7 +203,7 @@ Content-Type: application/json
     {
       "title": "Acrylic Paint Set for Beginners",
       "description": "A 24-color acrylic paint set with brushes and palette.",
-      "price": "19.99",
+      "price": "19.99₹",
       "ratings": "4.6",
       "no_of_ratings": "324",
       "main_category": "ArtsCrafts"
@@ -211,7 +211,7 @@ Content-Type: application/json
     {
       "title": "Portable Easel Stand",
       "description": "Lightweight adjustable easel for studio or travel.",
-      "price": "34.50",
+      "price": "34.50₹",
       "ratings": "4.4",
       "no_of_ratings": "128",
       "main_category": "ArtsCrafts"
@@ -219,7 +219,7 @@ Content-Type: application/json
     {
       "title": "Watercolor Brush Set",
       "description": "Set of 15 synthetic brushes suitable for watercolors and acrylics.",
-      "price": "12.00",
+      "price": "12.00₹",
       "ratings": "4.3",
       "no_of_ratings": "210",
       "main_category": "ArtsCrafts"
