@@ -122,11 +122,15 @@ Endpoint
 
 PowerShell example (Invoke-RestMethod)
 
+```powershell
 Invoke-RestMethod -Uri "http://localhost:5291/API/Recommender" -Method Post -Headers @{ 'MY-API-KEY' = $env:API_KEY } -ContentType 'application/json' -Body '"I want a gift for my sister who likes painting"'
+```
 
 cURL example (bash/cmd)
 
+```bash
 curl -X POST "http://localhost:5291/API/Recommender" -H "Content-Type: application/json" -H "MY-API-KEY: your_key" -d '"I want a gift for my sister who likes painting"'
+```
 
 Notes on request body
 - The controller expects a single string from the request body. The JSON body must therefore be the quoted sentence (for example: "I want a gift").
@@ -138,6 +142,7 @@ Notes on request body
 
 On success the API returns the `Recommendations` DTO. `Recommendations.Items` is a list where every element is a dictionary mapping dataset column names to string values (the original dataset row values). Example response (trimmed / illustrative):
 
+```http
 HTTP/1.1 200 OK
 Content-Type: application/json
 
@@ -169,6 +174,7 @@ Content-Type: application/json
     }
   ]
 }
+```
 
 Note: actual returned keys depend on the dataset header (the code converts each row to a dictionary using the header columns). The example above shows typical column names.
 
