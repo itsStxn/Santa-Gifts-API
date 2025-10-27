@@ -12,6 +12,7 @@ This README documents the project structure, components, how to run the API loca
 - High-level architecture
 - Components and responsibilities
 - Local setup and run instructions
+- Project folder structure
 - Configuration and environment variables
 - API usage (endpoint, request examples for PowerShell and curl)
 - Example successful response
